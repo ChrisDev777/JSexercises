@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Exercice 0</h1>
+
+        <script type="text/javascript">
+
+        /* Section 1 */   
+
+        var name = "Joe"; // Je déclare une variable "name" qui a pour valeur une chaine de caractère "Joe".
+        var city = 'London'; // Je déclare une variable "city" qui a pour valeur une chaine de caractère "London".
+        var age = 32; // Je déclare une variable "age" qui a pour valeur un entier "32".
+        var isRed = true; // Je déclare une variable de type boolean "isRed" qui a pour valeur Vrai.
+        var isOld = age > 80; // Je déclare une variable qui comporte plusieurs valeurs une chaine de caractère, un opérateur et en entier.
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // Je déclare une varaiable "previousJobs" qui a pour valeur un Array (tableau)
+                                                                              //  contenant 3 chaines de caractères "lawyer, developper","Professionnal"
+
+        function info(height, weight) {     // J'initialise une fonction "info" qui a pour paramètre "height, weight
+            if (height > 180) {             // Elle contient une condition (si la taille est plus grande que 180
+                console.log('Vous êtes grand'); // alors affiche "Vous êtes grand"
+            }
+            if (weight < 0) { // Contient également une autre cond si poids en dessous de 0
+                console.log('oups, there is a problem'); //Affiche "Oups il y a un problème"
+            } else if ( weight < 15) { //Sinon si poids en dessous de 15
+                console.log('Are you that slim ?') // Affiche "êtes vous si maigre?"
+            } else {
+                console.log('Good !') // Sinon afficher "Bien"
+            }
+        }
+
+        info(165, 45); // j'appel la fonction info qui contient 2 param. "165,45"
+
+        var myHeight = 175; // je déclare une variable myHeight qui a pour valeur un entier "175"
+        var myWeight = 86; // je déclare une var myWeight qui a pour valeur un entier "86"
+
+        info(myHeight, myWeight); // je rappel la fonction info avec mes 2 param myHeight, myWeight
+
+        info(myHeight + 15, myWeight - 100); // je rappel la fonction cependant cette fois j'ajoute + 15 à ma variable myHeight et retire 100 à ma var myWeight
+
+        function toUpper(variable) { // je crée une fonction toUpper qui a pour param "variable"
+            return variable.toUpperCase(); // et lui fait retourner "variable en majuscule"
+        }
+
+        var upperName = toUpper(name); // je déclare une variable upperName qui a pour valeur "toUpper(name)"
+
+        for (i = 0; i < 3; i = i + 1) { // j'initialise une boucle for contenant une décla de var i = 0 exec, i plus petit que 3 exec, et une auto incrémentation de 1
+            console.log(previousJobs[i]); //affiche la variable i
+        }
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.
+        console.log(city);
+
+        // afficher si Joe est roux ou pas.
+
+        console.log(isRed);
+
+        /* Section 3 */
+
+        console.log(myVariable);
+
+        </script>
+
+    </body>
+</html>
